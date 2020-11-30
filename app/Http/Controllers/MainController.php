@@ -94,18 +94,6 @@ class MainController extends Controller
         $pidsProcess = $this->osQueueProcessIsRunning();
     }
 
-    public function test()
-    {
-
-        $product = new ProductsIaiGetter;
-        $product->insertIntoDataBase();
-
-        $iaiCompare = new IaiComparison;
-        $iaiCompare->compare();
-
-    }
-
-    
 
     public function getAccesToken()
     {
