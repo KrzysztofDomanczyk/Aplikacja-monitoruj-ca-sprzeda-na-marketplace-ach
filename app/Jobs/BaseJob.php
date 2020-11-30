@@ -20,7 +20,7 @@ abstract class BaseJob
     {
         $message = $exception->getMessage() . PHP_EOL . PHP_EOL  . $exception;
          Mail::raw($message, function ($message) {
-            $message->from('braki@phu-szczepan.pl', 'Monitor dostępności');
+            $message->from('xxxx', 'Monitor dostępności');
             $message->subject('[BŁĄD]Monitor dostępności ' . Carbon::now()->format('Y-m-d H:i:s'));
             $message->to('it@phu-szczepan.pl');
         });
